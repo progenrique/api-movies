@@ -16,3 +16,5 @@ const PUERTO = process.env.PORT || 1234;
 app.listen(PUERTO, () => {
   console.log(`el servidor esta escuchando http://localhost:${PUERTO}`);
 });
+
+export default app;
