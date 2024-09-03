@@ -1,0 +1,53 @@
+GET http://localhost:1234/movies
+
+###
+
+GET http://localhost:1234/movies/4cc6e14a-cdd9-4a11-bfb2-ec399c74f3eb
+
+###
+GET  http://localhost:1234/movies/FantasY
+
+
+###
+
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{   
+    "title": "Alien, el octavo pasajerooooooooo",
+    "year": 1979,
+    "director": "Ridley Scott",
+    "duration": 117,
+    "poster": "https://i.ebayimg.com/images/g/4goAAOSwMyBe7hnQ/s-l1200.webp",
+    "genres": ["Action","Sci-Fi","Fantasy"],
+    "rate": 8.5
+  }
+
+
+###
+
+GET http://localhost:1234/movies
+
+###
+
+PATCH http://localhost:1234/movies/4cc6e14a-cdd9-4a11-bfb2-ec399c74f3eb
+Content-Type: application/json
+
+{
+    "id": "4cc6e14a-cdd9-4a11-bfb2-ec399c74f3eb",
+    "title": "Alien, el octavo pasajeros",
+    "year": 1979,
+    "director": "Ridley Scott",
+    "duration": 117,
+    "poster": "https://i.ebayimg.com/images/g/4goAAOSwMyBe7hnQ/s-l1200.webp",
+    "rate": 8.5,
+    "genres": ["Action","drama","Sci-Fi"]
+  }
+
+
+###
+###
+
+DELETE  http://localhost:1234/movies/ffa11c6a-556e-48a4-af4b-49f3cb47e813
+
+
