@@ -2,10 +2,10 @@ GET http://localhost:1234/movies
 
 ###
 
-GET http://localhost:1234/movies/4cc6e14a-cdd9-4a11-bfb2-ec399c74f3eb
+GET http://localhost:1234/movies/id/ab462bd9-56ac-11ef-954d-04d9f5ae1fce
 
 ###
-GET  http://localhost:1234/movies/FantasY
+GET  http://localhost:1234/movies/genre/FantasY
 
 
 ###
@@ -13,14 +13,19 @@ GET  http://localhost:1234/movies/FantasY
 POST http://localhost:1234/movies
 Content-Type: application/json
 
-{   
-    "title": "Alien, el octavo pasajerooooooooo",
-    "year": 1979,
-    "director": "Ridley Scott",
-    "duration": 117,
-    "poster": "https://i.ebayimg.com/images/g/4goAAOSwMyBe7hnQ/s-l1200.webp",
-    "genres": ["Action","Sci-Fi","Fantasy"],
-    "rate": 8.5
+{
+    "id": "ab462bd9-56ac-11ef-954d-04d9f5ae1fce",
+    "title": "The Dark Knight",
+    "year": 2008,
+    "director": "Christopher Nolan",
+    "duration": 152,
+    "poster": "https://i.ebayimg.com/images/g/yokAAOSw8w1YARbm/s-l1200.jpg",
+    "rate": 9.0,
+    "genres": [
+      "Drama",
+      "Action",
+      "Crime"
+    ]
   }
 
 
@@ -48,6 +53,6 @@ Content-Type: application/json
 ###
 ###
 
-DELETE  http://localhost:1234/movies/ffa11c6a-556e-48a4-af4b-49f3cb47e813
+DELETE  http://localhost:1234/movies/ab462bd9-56ac-11ef-954d-04d9f5ae1fce
 
 

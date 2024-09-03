@@ -1,11 +1,19 @@
 import msql from "mysql2/promise";
 
-const config = {
+/* const config = {
   host: "localhost",
   user: "root",
   port: 8081,
   password: "Sn@ke",
   database: "moviesdb",
+}; */
+
+const config = {
+  host: "bk8spwyixe1h8nizlfsh-mysql.services.clever-cloud.com",
+  user: "uwcn0pghsmkpwzi8",
+  port: 3306,
+  password: "eXVgnIfa95EMMwCRmBTC",
+  database: "bk8spwyixe1h8nizlfsh",
 };
 
 const connection = await msql.createConnection(config);
